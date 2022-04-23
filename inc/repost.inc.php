@@ -25,7 +25,7 @@ if(!empty(mysqli_fetch_assoc($result))){
      exit(); 
 }
 
-$d = new DateTime('now', $timeZone);
+$d = new DateTime(null, $timeZone);
 $date = $d->format('j M');
 $day = $d->format('l');
 $image = $row['image'];
